@@ -1,9 +1,34 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Net;
 using System.IO;
+
+
+/*****
+
+From    https://codesamplez.com/programming/http-request-c-sharp
+
+
+
+Using This C# HTTP Request Class:
+
+Implementing this class to an application is quite easy. First you have to create an instance of the class and then call a parameter less function to receive the response data. So, all things to feed it is in the constructor calling. There are three different type of constructor you can call. One with one parameter(web resource url), it simply download the data of the web page. Second one with 2 parameters(url and method of request,get or post), actually, this is the one, you won’t use anytime for this version of the class, as without data post type is meaning less(I have kept it to be it as modular and so that calling constructor can be flexible enough and other parameters also can be set by creating properties if needed). Third one, with 3 parameters(url, method and data).
+
+For url parameter, you must have to use a valid uri. For method parameter, you have to use “GET” or “POST” depending on your request type. Third parameter should be all data url encoded should be like this format:
+“variable1=value1&variable2=value2”
+
+Here is a sample code snippet to make a complete request and get the string response:
+
+//create the constructor with post type and few data
+MyWebRequest myRequest = new MyWebRequest("http://www.yourdomain.com","POST","a=value1&b=value2");
+//show the response string on the console screen.
+Console.WriteLine(myRequest.GetResponse());
+
+********/
+
+
 
 namespace WpfTestApplication
 {
